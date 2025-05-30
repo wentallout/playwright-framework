@@ -1,14 +1,14 @@
 import { Page } from '@playwright/test';
+import { HomePage } from './home-page';
 
-export class BasePage {
-    url: string;
+export class PageManager {
     page: Page;
 
     constructor(page: Page) {
         this.page = page;
     }
 
-    async navigateTo() {
-        await this.page.goto(this.url);
+    getHomePage() {
+        return new HomePage(this.page);
     }
 }

@@ -1,18 +1,26 @@
-import { test, expect } from '@playwright/test';
+// import { expect, test } from '@playwright/test';
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+// import { TodoPage } from './PageObjects/TodoPage';
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
+// let todoPage: TodoPage;
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+// test.describe('check todo page', async () => {
+//     test.beforeEach(async ({ page }) => {
+//         todoPage = new TodoPage(page);
+//         await todoPage.navigateTo();
+//     });
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+//     test('Check todo list', async ({ page }) => {
+//         page.on('dialog', async (dialog) => {
+//             await dialog.accept();
+//         });
 
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
-});
+//         await todoPage.addNTodo(100);
+//         await todoPage.deleteOddNumberedTodos(100);
+
+//         // c. Kiểm tra todo có số thứ tự 90 nằm trong viewport.
+//         await expect(page.locator('#task-list li:has-text("Todo 90")')).toBeVisible();
+//         // d. Kiểm tra todo có số thứ tự 21 bị ẩn (không nằm trong DOM)
+//         await expect(page.locator('#task-list li:has-text("Todo 21")')).not.toBeVisible();
+//     });
+// });

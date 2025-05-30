@@ -1,0 +1,27 @@
+Build test framework
+Thực hiện build test framework cho trang web: https://pw-practice-dev.playwrightvn.com, tạo
+repo mới trên GitHub cá nhân và push lên đó.
+
+
+2. Tạo folder project-documentations , tạo các file sau để viết các suy nghĩ, phân tích
+của mình
+a. 01-website-feature.md: viết về các tính năng của website, các lưu ý gặp
+phải khi test (ví dụ phần nào lâu, phần nào chậm).
+b. 02-folder-design.md: thiết kế các folder
+c. 03-pom-design.md: thiết kế các pom thế nào
+d. 04-utils-design.md: thiết kế các file utils cần thiết cho test
+e. 05-fixture-design.md: thiết kế các fixture cần thiết cho test
+f. 06-coding-convention-design.md: các coding convention dùng trong dự
+án
+
+3. Tạo file README.md, link các mục tương ứng trong project vào các file markdown đã
+viết.
+4. Tạo file .gitignore, .env:
+a. Trong file .gitignore, loại file .env khỏi các file được track (không push env
+file lên repo)
+b. Trong file .env, lưu trữ thông tin môi trường, tài khoản, mật khẩu.
+5. Tiến hành implement fixture, utils
+6. Tiến hành implement tests.
+Một số Playwright framework hay có thể tham khảo:
+1. https://github.com/akshayp7/playwright-typescript-playwright-test
+2. https://github.com/MukunthanML/enterprise-playwright-automation-framework

@@ -51,11 +51,13 @@ export default defineConfig({
         {
             name: 'firefox',
             use: { ...devices['Desktop Firefox'] },
+            dependencies: ['global-setup'],
         },
 
         {
             name: 'webkit',
             use: { ...devices['Desktop Safari'] },
+            dependencies: ['global-setup'],
         },
 
         /* Test against mobile viewports. */
